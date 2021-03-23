@@ -1,0 +1,3 @@
+networkx -> conda install -c anaconda networkx
+graphviz -> conda install -c anaconda graphviz
+pygraphviz -> conda install -c conda-forge pygraphviz
