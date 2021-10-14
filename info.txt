@@ -1,0 +1,5 @@
+Wymaga imbalanced-learn do odpalenia.
+Domyślnie zakomentowałem wyświetlanie confusion matrix oraz classification report (przez chaos na wyjściu).
+Można je odkomentować w funkcji print_scores.
+Domyślne parametry modeli okazują się skuteczniejsze niż moje próby ich dopasowania, nie próbowałem używać optuny,
+ani jakiegoś GridSearchCV żeby znaleźć najlepsze parametry.

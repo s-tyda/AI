@@ -3,8 +3,8 @@ from networkx import DiGraph
 import pygraphviz
 import os
 
-if not os.path.exists('plots'):
-    os.makedirs('plots')
+if not os.path.exists('plots/Dung'):
+    os.makedirs('plots/Dung')
 
 graph = DiGraph()
 
@@ -66,7 +66,7 @@ A.node_attr['style'] = 'filled'
 A.graph_attr['label'] = 'Graph'
 A.node_attr['shape'] = 'circle'
 A.layout()
-A.draw("plots/graph_input.png")
+A.draw("plots/Dung/graph_input.png")
 A.clear()
 
 prefered = []
@@ -115,5 +115,5 @@ for idx, prefer in enumerate(prefered):
         else:
             node.attr['fillcolor'] = 'red'
     A.layout()
-    A.draw(f"plots/prefered_{idx + 1}.png")
+    A.draw(f"plots/Dung/prefered_{idx + 1}.png")
     A.clear()
